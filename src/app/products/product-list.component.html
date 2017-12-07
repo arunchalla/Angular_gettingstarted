@@ -38,7 +38,7 @@
                                *ngIf='showImage'
                                ></td>
                         <td>{{product.productName}}</td>
-                        <td>{{product.productCode | lowercase}}</td>
+                        <td>{{product.productCode | lowercase| ConvertToSpaces: '-'}}</td>
                         <td>{{product.releaseDate}}</td>
                         <td>{{product.price | currency:'USD':true:'1.2-2'}}</td>
                         <td>{{product.StarRating}}</td>
